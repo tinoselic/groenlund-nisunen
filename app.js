@@ -3,6 +3,7 @@ const mainMenu = document.querySelector('.mainMenu');
 const closeMenu = document.querySelector('.closeMenu');
 const openMenu = document.querySelector('.openMenu');
 const main = document.querySelector('main');
+const nav = document.querySelector('nav');
 
 openMenu.addEventListener('click', showNav);
 closeMenu.addEventListener('click', closeNav);
