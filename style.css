@@ -42,7 +42,7 @@ nav {
   width: 100%;
   top: 0;
   background: #fff;
-  box-shadow: 0px 1px;
+  /* box-shadow: 0px 1px; */
   z-index: 2;
 }
 
@@ -146,6 +146,10 @@ h4 {
 .accordion {
   box-shadow: 0px 1px 0px #c8c8c8;
 }
+
+/* .accordion:hover {
+  background-color: #c8c8c8;
+} */
 
 .contentBox {
   position: relative;
