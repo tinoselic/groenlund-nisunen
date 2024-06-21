@@ -95,7 +95,7 @@ nav .mainMenu .closeMenu img {
 
 main {
   margin: 0px 18px 0px;
-  padding-top: 84px;
+  padding-top: 81px;
   display: block;
 }
 
@@ -133,7 +133,7 @@ h2 {
 h3 {
   font-size: small;
   font-weight: normal;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 h4 {
@@ -361,7 +361,7 @@ a:visited {
     position: fixed;
     top: 60px;
     padding-top: 18px;
-    padding-bottom: 0px;
+    padding-bottom: 18px;
     width: calc(50% - 48px);
     z-index: 1;
     background-color: #fff;
@@ -382,11 +382,11 @@ a:visited {
   }
 
   .row {
-    margin: 81px 0 36px 0;
+    margin: 78px 0 36px 0;
   }
 
   .column {
-    top: 166px;
+    top: 160px;
     float: left;
     width: 50%;
   }
