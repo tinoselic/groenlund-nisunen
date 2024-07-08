@@ -1,3 +1,1 @@
-# groenlund-nisunen2
-
-test
+Temporary portfolio website of Finnish artists Grönlund-Nisunen.
