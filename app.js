@@ -3,7 +3,8 @@ const mainMenu = document.querySelector('.mainMenu');
 const closeMenu = document.querySelector('.closeMenu');
 const openMenu = document.querySelector('.openMenu');
 const main = document.querySelector('main');
-const mainStart = document.getElementById('start');
+const mainStart = document.getElementById('mainStart');
+const footerStart = document.getElementById('footerStart');
 
 openMenu.addEventListener('click', showNav);
 closeMenu.addEventListener('click', closeNav);
@@ -13,6 +14,7 @@ function showNav() {
 	openMenu.style.display = 'none';
 	main.style.display = 'none';
 	mainStart.style.display = 'block';
+	footerStart.style.display = 'none';
 	mainStart.style.filter = 'blur(5px)';
 }
 
@@ -21,6 +23,7 @@ function closeNav() {
 	openMenu.style.display = 'block';
 	main.style.display = 'block';
 	mainStart.style.filter = 'none';
+	footerStart.style.display = 'block';
 }
 
 
@@ -35,7 +38,7 @@ for (let i = 0; i < accordion.length; i++) {
 
 //Footer
 document.addEventListener("DOMContentLoaded", function() {
-    var footer = document.getElementById("copyright");
+    var footer = document.querySelector("footer");
     var footerText = "© 2024 Grönlund-Nisunen";
     footer.textContent = footerText;
 });
