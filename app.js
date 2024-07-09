@@ -3,7 +3,7 @@ const mainMenu = document.querySelector('.mainMenu');
 const closeMenu = document.querySelector('.closeMenu');
 const openMenu = document.querySelector('.openMenu');
 const main = document.querySelector('main');
-const nav = document.querySelector('nav');
+const mainStart = document.getElementById('start');
 
 openMenu.addEventListener('click', showNav);
 closeMenu.addEventListener('click', closeNav);
@@ -12,13 +12,15 @@ function showNav() {
 	mainMenu.style.display = 'block';
 	openMenu.style.display = 'none';
 	main.style.display = 'none';
-	main.style.display = 'none';
+	mainStart.style.display = 'block';
+	mainStart.style.filter = 'blur(5px)';
 }
 
 function closeNav() {
 	mainMenu.style.display = 'none';
 	openMenu.style.display = 'block';
 	main.style.display = 'block';
+	mainStart.style.filter = 'none';
 }
 
 
