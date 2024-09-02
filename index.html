@@ -109,7 +109,6 @@
       max-width: 500px;
       transform: translate(-50%, -50%);
       font-style: italic;
-      font-size: small;
       text-align: center;
       line-height: 1.5;
     }
@@ -186,35 +185,26 @@
     }
 
     h1 {
-      font-size: large;
       font-weight: normal;
     }
 
     h2 {
-      font-size: small;
       font-weight: bold;
     }
 
     h3 {
-      font-size: small;
       font-weight: normal;
       text-transform: uppercase;
     }
 
     h4 {
-      font-size: small;
       font-weight: normal;
       text-transform: uppercase;
       line-height: 60px;
     }
 
-    pre {
-      font-size: small;
-    }
-
     p {
       color: #777;
-      font-size: small;
       line-height: 1.5;
     }
 
@@ -230,7 +220,7 @@
     .caption {
       max-width: 100%;
       text-align: left;
-      font-size: 9px;
+      font-size: x-small;
       font-style: italic;
     }
 
@@ -329,6 +319,18 @@
     }
 
     @media only screen and (min-width: 1920px) {
+      * {
+        font-size: medium;
+      }
+
+      .caption {
+        font-size: small;
+      }
+
+      footer {
+        font-size: small;
+      }
+
       nav .logo {
         padding-left: 400px;
       }

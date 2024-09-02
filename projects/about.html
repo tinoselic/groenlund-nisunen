@@ -2,459 +2,463 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="../assets/favicon.svg" />
-    <style>
-        @font-face {
-  font-family: "FreeSans";
-  src: url("../assets/FreeSans.woff") format('woff');
-}
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="../assets/favicon.svg" />
+  <style>
+    @font-face {
+      font-family: "FreeSans";
+      src: url("../assets/FreeSans.woff") format('woff');
+    }
 
-@font-face {
-  font-family: "FreeSans";
-  src: url("../assets/FreeSansBold.woff") format('woff');
-  font-weight: bold;
-}
+    @font-face {
+      font-family: "FreeSans";
+      src: url("../assets/FreeSansBold.woff") format('woff');
+      font-weight: bold;
+    }
 
-@font-face {
-  font-family: "FreeSans";
-  src: url("../assets/FreeSansBoldOblique.woff") format('woff');
-  font-weight: bold;
-  font-style: italic;
-}
+    @font-face {
+      font-family: "FreeSans";
+      src: url("../assets/FreeSansBoldOblique.woff") format('woff');
+      font-weight: bold;
+      font-style: italic;
+    }
 
-@font-face {
-  font-family: "FreeSans";
-  src: url("../assets/FreeSansOblique.woff") format('woff');
-  font-style: italic;
-}
+    @font-face {
+      font-family: "FreeSans";
+      src: url("../assets/FreeSansOblique.woff") format('woff');
+      font-style: italic;
+    }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  color: #000000;
-  font-family: "FreeSans", sans-serif;
-  font-size: small;
-  scroll-behavior: smooth;
-}
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      color: #000000;
+      font-family: "FreeSans", sans-serif;
+      font-size: small;
+      scroll-behavior: smooth;
+    }
 
-body {
-  background: #fff;
-}
+    body {
+      background: #fff;
+    }
 
-nav {
-  position: fixed;
-  height: fit-content;
-  width: 100%;
-  top: 0;
-  background: #fff;
-  z-index: 2;
-}
+    nav {
+      position: fixed;
+      height: fit-content;
+      width: 100%;
+      top: 0;
+      background: #fff;
+      z-index: 2;
+    }
 
-nav .logo {
-  padding-left: 18px;
-  width: fit-content;
-}
+    nav .logo {
+      padding-left: 18px;
+      width: fit-content;
+    }
 
-nav .openMenu {
-  display: block;
-  position: absolute;
-  top: 17px;
-  right: 18px;
-}
+    nav .openMenu {
+      display: block;
+      position: absolute;
+      top: 17px;
+      right: 18px;
+    }
 
-nav .openMenu img {
-  height: 26px;
-  cursor: pointer;
-}
+    nav .openMenu img {
+      height: 26px;
+      cursor: pointer;
+    }
 
-nav .mainMenu {
-  height: 100vh;
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: top 1s ease;
-}
+    nav .mainMenu {
+      height: 100vh;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: top 1s ease;
+    }
 
-nav .mainMenu li {
-  padding-left: 18px;
-}
+    nav .mainMenu li {
+      padding-left: 18px;
+    }
 
-nav .mainMenu li a {
-  line-height: 60px;
-  text-underline-offset: 3px;
-}
+    nav .mainMenu li a {
+      line-height: 60px;
+      text-underline-offset: 3px;
+    }
 
-nav .mainMenu .closeMenu {
-  display: block;
-  position: absolute;
-  top: 17px;
-  right: 18px;
-  cursor: pointer;
-}
+    nav .mainMenu .closeMenu {
+      display: block;
+      position: absolute;
+      top: 17px;
+      right: 18px;
+      cursor: pointer;
+    }
 
-nav .mainMenu .closeMenu img {
-  height: 26px;
-  cursor: pointer;
-}
+    nav .mainMenu .closeMenu img {
+      height: 26px;
+      cursor: pointer;
+    }
 
-main {
-  margin: 0px 18px 0px;
-  padding-top: 84px;
-  display: block;
-}
+    main {
+      margin: 0px 18px 0px;
+      padding-top: 84px;
+      display: block;
+    }
 
-.row {
-  margin-bottom: 36px;
-}
+    .row {
+      margin-bottom: 36px;
+    }
 
-.column {
-  width: 100%;
-  margin-bottom: 18px;
-}
+    .column {
+      width: 100%;
+      margin-bottom: 18px;
+    }
 
-h1 {
-  font-size: large;
-  font-weight: normal;
-}
+    h1 {
+      font-weight: normal;
+    }
 
-h2 {
-  font-size: small;
-  font-weight: bold;
-}
+    h2 {
+      font-weight: bold;
+    }
 
-h3 {
-  font-size: small;
-  font-weight: normal;
-  text-transform: uppercase;
-}
+    h3 {
+      font-weight: normal;
+      text-transform: uppercase;
+    }
 
-h4 {
-  font-size: small;
-  font-weight: normal;
-  text-transform: uppercase;
-  line-height: 60px;
-}
+    h4 {
+      font-weight: normal;
+      text-transform: uppercase;
+      line-height: 60px;
+    }
 
-pre {
-  font-size: small;
-}
+    p {
+      color: #777;
+      line-height: 1.5;
+    }
 
-p {
-  color: #777;
-  font-size: small;
-  line-height: 1.5;
-}
+    .title {
+      color: #000;
+      max-width: 100%;
+    }
 
-.title {
-  color: #000;
-  max-width: 100%;
-}
-.title:hover {
-  color: #777;
-}
+    .title:hover {
+      color: #777;
+    }
 
-.caption {
-  max-width: 100%;
-  text-align: left;
-  font-size: x-small;
-  font-style: italic;
-}
+    .caption {
+      max-width: 100%;
+      text-align: left;
+      font-size: x-small;
+      font-style: italic;
+    }
 
-i {
-  color: #777;
-}
+    i {
+      color: #777;
+    }
 
-img {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
+    img {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-img:hover {
-  filter: brightness(0.8);
-  cursor: zoom-in;
-}
+    img:hover {
+      filter: brightness(0.8);
+      cursor: zoom-in;
+    }
 
-footer {
-  margin: 36px 0 36px;
-  text-align: center;
-  font-size: x-small;
-}
+    footer {
+      margin: 36px 0 36px;
+      text-align: center;
+      font-size: x-small;
+    }
 
-nav a:link {
-  text-decoration: none;
-  color: #000000;
-}
+    nav a:link {
+      text-decoration: none;
+      color: #000000;
+    }
 
-nav .mainMenu a:hover {
-  text-decoration: underline;
-  color: #000000;
-}
+    nav .mainMenu a:hover {
+      text-decoration: underline;
+      color: #000000;
+    }
 
-nav .mainMenu a:active {
-  text-decoration: underline;
-  color: #000000;
-}
+    nav .mainMenu a:active {
+      text-decoration: underline;
+      color: #000000;
+    }
 
-a:link {
-  text-decoration: underline;
-  color: #000000;
-}
+    a:link {
+      text-decoration: underline;
+      color: #000000;
+    }
 
-a:hover {
-  text-decoration: underline;
-  color: #999;
-}
+    a:hover {
+      text-decoration: underline;
+      color: #999;
+    }
 
-a:visited {
-  text-decoration: none;
-}
+    a:visited {
+      text-decoration: none;
+    }
 
-@media only screen and (min-width: 796px) {
-  nav {
-    display: flex;
-    justify-content: space-between;
-  }
+    @media only screen and (min-width: 796px) {
+      nav {
+        display: flex;
+        justify-content: space-between;
+      }
 
-  nav .logo {
-    padding-left: 48px;
-  }
+      nav .logo {
+        padding-left: 48px;
+      }
 
-  nav .openMenu {
-    display: none;
-  }
+      nav .openMenu {
+        display: none;
+      }
 
-  nav .mainMenu {
-    padding: 0px 48px 0px 0px;
-    height: fit-content;
-    flex-wrap: wrap;
-    display: inline-block;
-  }
+      nav .mainMenu {
+        padding: 0px 48px 0px 0px;
+        height: fit-content;
+        flex-wrap: wrap;
+        display: inline-block;
+      }
 
-  nav .mainMenu li {
-    padding-left: 18px;
-    display: inline-block;
-  }
+      nav .mainMenu li {
+        padding-left: 18px;
+        display: inline-block;
+      }
 
-  nav .mainMenu li a {
-    line-height: 60px;
-  }
+      nav .mainMenu li a {
+        line-height: 60px;
+      }
 
-  nav .mainMenu .closeMenu {
-    display: none;
-  }
+      nav .mainMenu .closeMenu {
+        display: none;
+      }
 
-  main {
-    margin: 0 48px;
-  }
+      main {
+        margin: 0 48px;
+      }
 
-  .column {
-    top: 166px;
-    float: left;
-    width: 50%;
-  }
+      .column {
+        top: 166px;
+        float: left;
+        width: 50%;
+      }
 
-  .left {
-    padding-right: 12px;
-    position: -webkit-sticky;
-    /* Safari */
-    position: sticky;
-    z-index: 0;
-  }
+      .left {
+        padding-right: 12px;
+        position: -webkit-sticky;
+        /* Safari */
+        position: sticky;
+        z-index: 0;
+      }
 
-  .right {
-    padding-left: 12px;
-  }
+      .right {
+        padding-left: 12px;
+      }
 
-  .about-column-left {
-    float: left;
-    width: 60%;
-    padding-right: 12px;
-  }
+      .about-column-left {
+        float: left;
+        width: 60%;
+        padding-right: 12px;
+      }
 
-  .about-column-right {
-    float: left;
-    width: 40%;
-    padding-left: 12px;
-    position: -webkit-sticky;
-    /* Safari */
-    position: sticky;
-  }
+      .about-column-right {
+        float: left;
+        width: 40%;
+        padding-left: 12px;
+        position: -webkit-sticky;
+        /* Safari */
+        position: sticky;
+      }
 
-  .row::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
 
-  p {
-    max-width: 500px;
-    text-align: justify;
-    text-justify: inter-word;
-  }
-}
+      p {
+        max-width: 800px;
+        text-align: justify;
+        text-justify: inter-word;
+      }
+    }
 
-@media only screen and (min-width: 1280px) {
-  nav .logo {
-    padding-left: 250px;
-  }
+    @media only screen and (min-width: 1280px) {
+      nav .logo {
+        padding-left: 250px;
+      }
 
-  nav .mainMenu {
-    padding-right: 250px;
-  }
+      nav .mainMenu {
+        padding-right: 250px;
+      }
 
-  nav .mainMenu li {
-    padding-left: 36px;
-  }
+      nav .mainMenu li {
+        padding-left: 36px;
+      }
 
-  main {
-    margin: 0 250px;
-  }
-}
+      main {
+        margin: 0 250px;
+      }
+    }
 
-@media only screen and (min-width: 1920px) {
-  nav .logo {
-    padding-left: 400px;
-  }
+    @media only screen and (min-width: 1920px) {
+      * {
+        font-size: medium;
+      }
 
-  nav .mainMenu {
-    padding-right: 400px;
-  }
+      .caption {
+        font-size: small;
+      }
 
-  nav .mainMenu li {
-    padding-left: 48px;
-  }
+      footer {
+        font-size: small;
+      }
 
-  main {
-    margin: 0 400px;
-  }
+      nav .logo {
+        padding-left: 400px;
+      }
 
-  .about-column-left {
-    width: 70%;
-  }
+      nav .mainMenu {
+        padding-right: 400px;
+      }
 
-  .about-column-right {
-    width: 30%;
-  }
-}
-    </style>
-    <title>Grönlund-Nisunen - About</title>
+      nav .mainMenu li {
+        padding-left: 48px;
+      }
+
+      main {
+        margin: 0 400px;
+      }
+
+      .about-column-left {
+        width: 70%;
+      }
+
+      .about-column-right {
+        width: 30%;
+      }
+    }
+  </style>
+  <title>Grönlund-Nisunen - About</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo"><a href="../index.html">
-                    <h4>Grönlund-Nisunen</h4>
-                </a></div>
-            <div class="openMenu"><img src="../assets/menu_FILL0_wght400_GRAD0_opsz48.svg" alt=""></div>
-            <ul class="mainMenu">
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html" style="text-decoration: underline;">About</a></li>
-                <div class="closeMenu"><img src="../assets/close_FILL0_wght400_GRAD0_opsz48.svg" alt=""></div>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="row">
-            <div class="about-column-left">
-                <strong>Tommi Grönlund</strong>
-                <br>
-                Born in Turku 1967, lives and works in Helsinki
-                <br>
-                <br>
-                <strong>Petteri Nisunen</strong>
-                <br>
-                Born in Helsinki 1962, lives and works in Helsinki
-                <br>
-                <br>
-                <br>
-                <br>
-                <h2>Contact</h2>
-                <br>
-                Tommi Grönlund
-                <br>
-                tommi.gronlund@g-n.fi
-                <br>
-                +358 50 5941920
-                <br>
-                <br>
-                Petteri Nisunen
-                <br>
-                petteri.nisunen@g-n.fi
-                <br>
-                +358 50 5887262
-                <br>
-                <br>
-                Grönlund-Nisunen
-                <br>
-                Merimiehenkatu 32 VA2
-                <br>
-                00150 Helsinki
-                <br>
-                Finland
-                <br>
-                <br>
-                <br>
-                <br>
-                <h2>Prices and Awards</h2>
-                <br>
-                <p>2013</p>
-                Leonardo da Vinci World Award of Arts, World Cultural Council
-                <br>
-                <br>
-                <p>2004</p>
-                Edstrandska Stiftelsen
-                <br>
-                <br>
-                <p>2001</p>
-                Kuvataiteen valtionpalkinto / Statens boldkonstpris / Finnish State Art Award
-                Stina Krooks Stiftelse
-                <br>
-                <br>
-                <br>
-                <br>
-                <h2>Links</h2>
-                <br>
-                <a href="https://vimeo.com/usergronlundnisunen/videos" target="_blank">
-                    Vimeo</a>
-                <br>
-                <a href="https://anhava.com/artists/gronlund-nisunen/" target="_blank">
-                    Galerie Anhava</a>
-                <br>
-                <a href="https://www.estherschipper.com/artists/40-gronlund-nisunen/" target="_blank">
-                    Gallery Esther Schipper</a>
-                <br>
-                <br>
-                <br>
-                <br>
-                <h2>Website</h2>
-                <br>
-                Tino Selic
-                <br>
-                tino.selic@gmail.com
-                <br>
-                <a href="https://tinoselic.github.io/portfolio/" target="_blank">
-                  tinoselic.github.io/portfolio/</a>
-                <br>
-                <br>
-                <br>
-            </div>
-            <div class="about-column-right">
-                <a href="../images/2020-helsinki_crop_g-n-at-the-studio_photo-antti-viitala.jpg" target="_blank"><img
-                        src="../images/2020-helsinki_crop_g-n-at-the-studio_photo-antti-viitala.jpg"
-                        alt="Tommi Grönlund & Petteri Nisunen" width="400px" /></a>
-                <p class="caption">Tommi Grönlund & Petteri Nisunen, 2020 (photo: Antti Viitala)</p>
-            </div>
-        </div>
-    </main>
-    <footer id="copyright"></footer>
-    <script src="../app.js"></script>
+  <header>
+    <nav>
+      <div class="logo"><a href="../index.html">
+          <h4>Grönlund-Nisunen</h4>
+        </a></div>
+      <div class="openMenu"><img src="../assets/menu_FILL0_wght400_GRAD0_opsz48.svg" alt=""></div>
+      <ul class="mainMenu">
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html" style="text-decoration: underline;">About</a></li>
+        <div class="closeMenu"><img src="../assets/close_FILL0_wght400_GRAD0_opsz48.svg" alt=""></div>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="row">
+      <div class="about-column-left">
+        <strong>Tommi Grönlund</strong>
+        <br>
+        Born in Turku 1967, lives and works in Helsinki
+        <br>
+        <br>
+        <strong>Petteri Nisunen</strong>
+        <br>
+        Born in Helsinki 1962, lives and works in Helsinki
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>Contact</h2>
+        <br>
+        Tommi Grönlund
+        <br>
+        tommi.gronlund@g-n.fi
+        <br>
+        +358 50 5941920
+        <br>
+        <br>
+        Petteri Nisunen
+        <br>
+        petteri.nisunen@g-n.fi
+        <br>
+        +358 50 5887262
+        <br>
+        <br>
+        Grönlund-Nisunen
+        <br>
+        Merimiehenkatu 32 VA2
+        <br>
+        00150 Helsinki
+        <br>
+        Finland
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>Prices and Awards</h2>
+        <br>
+        <p>2013</p>
+        Leonardo da Vinci World Award of Arts, World Cultural Council
+        <br>
+        <br>
+        <p>2004</p>
+        Edstrandska Stiftelsen
+        <br>
+        <br>
+        <p>2001</p>
+        Kuvataiteen valtionpalkinto / Statens boldkonstpris / Finnish State Art Award
+        Stina Krooks Stiftelse
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>Links</h2>
+        <br>
+        <a href="https://vimeo.com/usergronlundnisunen/videos" target="_blank">
+          Vimeo</a>
+        <br>
+        <a href="https://anhava.com/artists/gronlund-nisunen/" target="_blank">
+          Galerie Anhava</a>
+        <br>
+        <a href="https://www.estherschipper.com/artists/40-gronlund-nisunen/" target="_blank">
+          Gallery Esther Schipper</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>Website</h2>
+        <br>
+        Tino Selic
+        <br>
+        tino.selic@gmail.com
+        <br>
+        <a href="https://tinoselic.github.io/portfolio/" target="_blank">
+          tinoselic.github.io/portfolio/</a>
+        <br>
+        <br>
+        <br>
+      </div>
+      <div class="about-column-right">
+        <a href="../images/2020-helsinki_crop_g-n-at-the-studio_photo-antti-viitala.jpg" target="_blank"><img
+            src="../images/2020-helsinki_crop_g-n-at-the-studio_photo-antti-viitala.jpg"
+            alt="Tommi Grönlund & Petteri Nisunen"/></a>
+        <p class="caption">Tommi Grönlund & Petteri Nisunen, 2020 (photo: Antti Viitala)</p>
+      </div>
+    </div>
+  </main>
+  <footer id="copyright"></footer>
+  <script src="../app.js"></script>
 </body>
 
 </html>
