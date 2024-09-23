@@ -121,7 +121,8 @@ main {
 }
 
 h1 {
-  font-weight: normal;
+  font-weight: bold;
+  padding-top: 12px;
 }
 
 h2 {
@@ -130,7 +131,7 @@ h2 {
 
 h3 {
   font-weight: normal;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
 }
 
 h4 {
@@ -152,16 +153,16 @@ h4 {
 }
 
 .label {
-  font-weight: bold;
-  /* font-size: x-large; */
+  /* font-weight: bold; */
+  font-size: x-large;
   padding: 12px 0px 12px 0px;
   position: relative;
   cursor: pointer;
 }
 
-/* .label:hover {
-  border: solid 1px #000;
-} */
+.label:hover {
+  color: #999;
+}
 
 .label::before {
   /* content: url(assets/add_FILL0_wght400_GRAD0_opsz24.svg); */
@@ -355,8 +356,7 @@ a:visited {
   .headline {
     position: fixed;
     top: 60px;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding: 18px 0 18px;
     width: calc(50% - 48px);
     z-index: 1;
     background-color: #fff;
@@ -471,6 +471,10 @@ a:visited {
     font-size: small;
   }
 
+  .label {
+    font-size: xx-large;
+  }
+
   nav .logo {
     padding-left: 400px;
   }
@@ -489,6 +493,36 @@ a:visited {
 
   .headline {
     width: calc(50% - 400px);
+  }
+
+  .about-column-left {
+    width: 70%;
+  }
+
+  .about-column-right {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  nav .logo {
+    padding-left: 1000px;
+  }
+
+  nav .mainMenu {
+    padding-right: 1000px;
+  }
+
+  nav .mainMenu li {
+    padding-left: 72px;
+  }
+
+  main {
+    margin: 0 1000px;
+  }
+
+  .headline {
+    width: calc(50% - 1000px);
   }
 
   .about-column-left {
