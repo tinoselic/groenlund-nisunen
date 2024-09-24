@@ -160,10 +160,6 @@ h4 {
   cursor: pointer;
 }
 
-.label:hover {
-  color: #999;
-}
-
 .label::before {
   /* content: url(assets/add_FILL0_wght400_GRAD0_opsz24.svg); */
   content: '+';
@@ -440,6 +436,10 @@ a:visited {
 
   .headline {
     width: calc(50% - 250px);
+  }
+
+  .label:hover {
+    color: #999;
   }
 }
 
