@@ -122,6 +122,20 @@
       font-size: x-small;
     }
 
+    video {
+      display: flex;
+      justify-content: center;
+    }
+
+    .background-video {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      user-select: none;
+      pointer-events: none;
+    }
+
     .slider {
       overflow: hidden;
       width: auto;
@@ -142,7 +156,7 @@
     }
 
     .slider .slide:nth-child(1) {
-      background-image: url('images/2023_GN_GalerieEstherSchipper_Berlin_ScatteredHorizon_1.jpg');
+      background-clip: url('videos/2024_GN_courreges_show_short.mp4');
       animation-delay: 0s;
     }
 
@@ -316,6 +330,11 @@
       nav .mainMenu li {
         padding-left: 36px;
       }
+
+      video {
+        width: 100vw;
+        height: auto;
+      }
     }
 
     @media only screen and (min-width: 1920px) {
@@ -381,7 +400,9 @@
   </header>
   <main id="mainStart">
     <div class="slider">
-      <div class="slide"></div>
+      <div class="slide"><video class="background-video" src="videos/2024_GN_courreges_show_short.mp4" frameBorder="0"
+          autoplay muted loop>
+        </video></div>
       <div class="slide"></div>
       <div class="slide"></div>
       <div class="slide"></div>
@@ -395,8 +416,6 @@
       <br>
       &ndash; Esther Schipper
   </div> -->
-    <!-- <video class="background-video" src="videos/2020_GN_Plane_Shanghai.MP4" frameBorder="0" autoplay muted loop>
-  </video> -->
   </main>
   <footer id="footerStart"></footer>
   <script src="app.js"></script>
