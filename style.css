@@ -28,7 +28,7 @@
   box-sizing: border-box;
   color: #000000;
   font-family: "FreeSans", sans-serif;
-  font-size: small;
+  font-size: 14px;
   scroll-behavior: smooth;
 }
 
@@ -154,7 +154,7 @@ h4 {
 
 .label {
   /* font-weight: bold; */
-  font-size: x-large;
+  font-size: 24px;
   padding: 12px 0px 12px 0px;
   position: relative;
   cursor: pointer;
@@ -206,7 +206,7 @@ p {
 .caption {
   max-width: 100%;
   text-align: left;
-  font-size: x-small;
+  font-size: 12px;
   font-style: italic;
 }
 
@@ -270,7 +270,7 @@ video {
 footer {
   margin: 36px 0 36px;
   text-align: center;
-  font-size: x-small;
+  font-size: 12px;
 }
 
 nav a:link {
@@ -324,8 +324,8 @@ a:visited {
   }
 
   nav .mainMenu li {
-    padding-left: 18px;
     display: inline-block;
+    padding-left: 48px;
   }
 
   nav .mainMenu li a {
@@ -422,10 +422,6 @@ a:visited {
     padding-right: 300px;
   }
 
-  nav .mainMenu li {
-    padding-left: 36px;
-  }
-
   .spaceholder {
     height: 330px;
   }
@@ -452,10 +448,6 @@ a:visited {
     padding-right: 400px;
   }
 
-  nav .mainMenu li {
-    padding-left: 48px;
-  }
-
   main {
     margin: 0 400px;
   }
@@ -467,15 +459,15 @@ a:visited {
 
 @media only screen and (min-width: 2560px) {
   * {
-    font-size: medium;
+    font-size: 16px;
   }
 
   .caption {
-    font-size: small;
+    font-size: 14px;
   }
 
   footer {
-    font-size: small;
+    font-size: 14px;
   }
 
   nav .logo {
@@ -492,6 +484,10 @@ a:visited {
 
   .headline {
     width: calc(50% - 600px);
+  }
+
+  .label {
+    font-size: 30px;
   }
 }
 
