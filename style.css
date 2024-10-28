@@ -86,7 +86,7 @@ nav .mainMenu .closeMenu {
 nav img {
   height: 26px;
   opacity: 1;
-  transition: .5s ease;
+  transition: .3s ease;
   cursor: pointer;
 }
 
@@ -112,6 +112,7 @@ nav .mainMenu a:active {
 a:link {
   text-decoration: underline;
   color: #000000;
+  transition: .3s ease;
 }
 
 a:hover {
@@ -229,6 +230,7 @@ p {
   color: #000;
   max-width: 100%;
 }
+
 .title:hover {
   color: #777;
 }
@@ -252,13 +254,15 @@ img {
 
 img.gallery:hover {
   cursor: pointer;
+  filter: brightness(0.5);
+  transition: .3s ease;
 }
 
 .thumbnail {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  transition: .5s ease;
+  transition: .3s ease;
 }
 
 .thumbnail:hover {
@@ -309,9 +313,9 @@ img.gallery:hover {
 /* Image Preview Animation */
 #previewImage {
   -webkit-animation-name: zoom;
-  -webkit-animation-duration: .5s;
+  -webkit-animation-duration: .3s;
   animation-name: zoom;
-  animation-duration: .5s;
+  animation-duration: .3s;
 }
 
 @-webkit-keyframes zoom {
