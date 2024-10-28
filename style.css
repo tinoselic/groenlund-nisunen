@@ -516,12 +516,6 @@ footer {
     text-align: justify;
     text-justify: inter-word;
   }
-
-  #previewImage {
-    width: auto;
-    max-width: 1920px;
-    height: 80%;
-  }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -547,6 +541,12 @@ footer {
 
   .label:hover {
     color: #999;
+  }
+
+  #previewImage {
+    width: auto;
+    max-width: 1920px;
+    height: 80%;
   }
 }
 
