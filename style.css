@@ -26,10 +26,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #000000;
+  color: #000;
   font-family: "FreeSans", sans-serif;
   font-size: 14px;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -73,7 +72,6 @@ nav .mainMenu li {
 
 nav .mainMenu li a {
   line-height: 60px;
-  text-underline-offset: 3px;
 }
 
 nav .mainMenu .closeMenu {
@@ -96,22 +94,23 @@ nav img:hover {
 
 nav a:link {
   text-decoration: none;
-  color: #000000;
+  color: #000;
 }
 
 nav .mainMenu a:hover {
   text-decoration: underline;
-  color: #000000;
+  color: #000;
 }
 
 nav .mainMenu a:active {
   text-decoration: underline;
-  color: #000000;
+  color: #000;
 }
 
 a:link {
+  color: #000;
   text-decoration: underline;
-  color: #000000;
+  text-underline-offset: 2px;
   transition: .3s ease;
 }
 
