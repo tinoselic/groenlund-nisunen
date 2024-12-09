@@ -31,6 +31,28 @@
   font-size: 14px;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #999;
+  transition: .3s ease;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c8c8c8;
+  transition: .3s ease;
+}
+
 body {
   background: #fff;
 }
@@ -63,7 +85,6 @@ nav .mainMenu {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: top 1s ease;
 }
 
 nav .mainMenu li {
@@ -406,10 +427,6 @@ footer {
   nav .mainMenu li {
     display: inline-block;
     padding-left: 48px;
-  }
-
-  nav .mainMenu li a {
-    line-height: 60px;
   }
 
   nav .mainMenu .closeMenu {
