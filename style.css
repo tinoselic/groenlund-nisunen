@@ -94,6 +94,7 @@ nav .mainMenu li {
 
 nav .mainMenu li a {
   line-height: 60px;
+  /* text-underline-offset: 6px; */
 }
 
 nav .mainMenu .closeMenu {
