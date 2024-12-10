@@ -28,7 +28,8 @@
   box-sizing: border-box;
   color: #000;
   font-family: "FreeSans", sans-serif;
-  font-size: 14px;
+  font-size: 14px;  
+  scroll-behavior: smooth;
 }
 
 /* width */
