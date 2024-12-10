@@ -45,13 +45,11 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #999;
-  transition: .3s ease;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #c8c8c8;
-  transition: .3s ease;
 }
 
 body {
