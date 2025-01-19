@@ -21,7 +21,7 @@ function showNav() {
 	main.style.display = 'none';
 	mainStart.style.display = 'block';
 	footerStart.style.display = 'none';
-	mainStart.style.filter = 'blur(2px)';
+	mainStart.style.filter = 'blur(8px)';
 }
 
 function closeNav() {
@@ -35,7 +35,7 @@ function closeNav() {
 
 //Footer
 document.addEventListener("DOMContentLoaded", function() {
-    var footerText = "© 2024 Grönlund-Nisunen";
+    var footerText = "© 2025 Grönlund-Nisunen";
     footer.textContent = footerText;
 });
 
