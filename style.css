@@ -449,10 +449,10 @@ footer {
   .headline {
     position: fixed;
     top: 60px;
-    padding: 18px 0 18px;
+    padding: 18px 0 36px;
     width: calc(50% - 48px);
     z-index: 1;
-    background-color: #fff;
+    background: linear-gradient(rgba(255 255 255 / 100%) 70px, rgba(255 255 255 / 0%));
   }
 
   .gallery-row .left {
