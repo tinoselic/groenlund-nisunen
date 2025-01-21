@@ -167,6 +167,10 @@ main {
   margin-bottom: 18px;
 }
 
+.about-row {
+  padding-bottom: 72px;
+}
+
 .gallery-row {
   margin-bottom: 36px;
 }
@@ -471,10 +475,6 @@ footer {
 
   .row {
     margin: 78px 0 36px 0;
-  }
-
-  .about-row {
-    padding-bottom: 36px;
   }
 
   .column {
