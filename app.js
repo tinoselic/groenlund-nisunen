@@ -21,7 +21,7 @@ function showNav() {
 	main.style.display = 'none';
 	mainStart.style.display = 'block';
 	footerStart.style.display = 'none';
-	mainStart.style.filter = 'blur(8px)';
+	mainStart.style.filter = 'blur(10px)';
 }
 
 function closeNav() {
