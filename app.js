@@ -21,7 +21,7 @@ function showNav() {
 	main.style.display = 'none';
 	mainStart.style.display = 'block';
 	footerStart.style.display = 'none';
-	mainStart.style.filter = 'blur(10px)';
+	mainStart.style.filter = 'blur(20px)';
 }
 
 function closeNav() {
@@ -65,35 +65,3 @@ modal.addEventListener('click', function (e) {
 		document.body.style.overflow = 'auto';
 	}
 });
-
-
-// Fade out when scroll
-/* var fade = document.querySelector('.fade');
-
-function fadeOutOnScroll(element) {
-	if (!element) {
-		return;
-	}
-
-	//var distanceToTop = window.scrollY + element.getBoundingClientRect().top;
-	var distanceToTop = 0;
-	var elementHeight = element.offsetHeight;
-	var scrollTop = document.documentElement.scrollTop;
-
-	var opacity = 1;
-
-	if (scrollTop > distanceToTop) {
-		opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
-	}
-
-	if (opacity >= 0) {
-		element.style.opacity = opacity;
-	}
-}
-
-function scrollHandler() {
-	fadeOutOnScroll(fade);
-}
-
-window.addEventListener('scroll', scrollHandler);
-main.style.display = 'block'; */
