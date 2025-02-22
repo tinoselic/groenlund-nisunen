@@ -28,7 +28,7 @@
   box-sizing: border-box;
   color: #000;
   font-family: "FreeSans", sans-serif;
-  font-size: 14px;  
+  font-size: 14px;
   scroll-behavior: smooth;
 }
 
@@ -92,7 +92,7 @@ nav .mainMenu li {
 
 nav .mainMenu li a {
   line-height: 60px;
-  /* text-underline-offset: 6px; */
+  text-underline-offset: 5px;
 }
 
 nav .mainMenu .closeMenu {
@@ -110,7 +110,7 @@ nav img {
 
 nav img:hover {
   opacity: 0.5;
-  transition: .3s ease;
+  transition: .5s ease;
 }
 
 nav a:link {
@@ -132,7 +132,6 @@ a:link {
   color: #000;
   text-decoration: underline;
   text-underline-offset: 2px;
-  transition: .3s ease;
 }
 
 a:hover {
@@ -149,10 +148,6 @@ main {
   padding-top: 81px;
   display: block;
 }
-
-/* .fade {
-  background-color: orangered;
-} */
 
 .headline {
   padding-bottom: 36px;
@@ -208,7 +203,9 @@ h4 {
 }
 
 .label {
-  /* font-weight: bold; */
+  /* font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 5px; */
   font-size: 24px;
   padding: 12px 0px 12px 0px;
   position: relative;
@@ -216,7 +213,6 @@ h4 {
 }
 
 .label::before {
-  /* content: url(assets/add_FILL0_wght400_GRAD0_opsz24.svg); */
   content: '+';
   position: absolute;
   top: 50%;
@@ -225,13 +221,13 @@ h4 {
 }
 
 .contentBox.active .label::before {
-  /* content: url(assets/remove_FILL0_wght400_GRAD0_opsz24.svg); */
   content: '–';
   position: absolute;
   top: 50%;
   right: 3px;
   transform: translateY(-50%);
 }
+
 
 .content {
   position: relative;
@@ -279,14 +275,14 @@ img {
 .gallery:hover {
   cursor: pointer;
   filter: brightness(0.7);
-  transition: .3s ease;
+  transition: .5s ease;
 }
 
 .thumbnail {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  transition: .3s ease;
+  transition: .5s ease;
 }
 
 .thumbnail:hover {
@@ -338,9 +334,9 @@ img {
 /* Image Preview Animation */
 #previewImage {
   -webkit-animation-name: zoom;
-  -webkit-animation-duration: .3s;
+  -webkit-animation-duration: .5s;
   animation-name: zoom;
-  animation-duration: .3s;
+  animation-duration: .5s;
 }
 
 @-webkit-keyframes zoom {
@@ -558,6 +554,7 @@ footer {
 
   .label:hover {
     color: #999;
+    transition: .5s ease;
   }
 
   #previewImage {
