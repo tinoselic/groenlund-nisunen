@@ -30,27 +30,24 @@
   font-family: "FreeSans", sans-serif;
   font-size: 14px;
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
 }
 
-/* width */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 4px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #fff;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #999;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #c8c8c8;
-}
+} */
 
 body {
   background: #fff;
@@ -58,7 +55,7 @@ body {
 
 nav {
   position: fixed;
-  height: fit-content;
+  height: 4em;
   width: 100%;
   top: 0;
   background: #fff;
@@ -67,15 +64,16 @@ nav {
 }
 
 nav .logo {
-  padding-left: 18px;
+  padding-left: 1em;
+  padding-top: 0.5em;
   width: fit-content;
 }
 
 nav .openMenu {
   display: block;
   position: absolute;
-  top: 17px;
-  right: 18px;
+  top: 1em;
+  right: 1em;
 }
 
 nav .mainMenu {
@@ -87,19 +85,19 @@ nav .mainMenu {
 }
 
 nav .mainMenu li {
-  padding-left: 18px;
+  padding-left: 1em;
 }
 
 nav .mainMenu li a {
-  line-height: 60px;
+  line-height: 5;
   text-underline-offset: 5px;
 }
 
 nav .mainMenu .closeMenu {
   display: block;
   position: absolute;
-  top: 17px;
-  right: 18px;
+  top: 1em;
+  right: 1em;
 }
 
 nav img {
@@ -144,35 +142,35 @@ a:visited {
 }
 
 main {
-  margin: 0px 18px 0px;
-  padding-top: 81px;
+  margin: 0 1em 0;
+  padding-top: 7em;
   display: block;
 }
 
 .headline {
-  padding-bottom: 36px;
+  padding-bottom: 2em;
 }
 
 .row {
-  margin-bottom: 48px;
+  margin-bottom: 3em;
 }
 
 .column {
   width: 100%;
-  margin-bottom: 18px;
+  margin-bottom: 1em;
 }
 
 .about-row {
-  padding-bottom: 72px;
+  padding-bottom: 4em;
 }
 
 .gallery-row {
-  margin-bottom: 36px;
+  margin-bottom: 2em;
 }
 
 h1 {
   font-weight: bold;
-  padding-top: 12px;
+  padding-top: 1em;
 }
 
 h2 {
@@ -187,7 +185,7 @@ h3 {
 h4 {
   font-weight: normal;
   text-transform: uppercase;
-  line-height: 60px;
+  line-height: 3;
 }
 
 .accordion {
@@ -206,8 +204,8 @@ h4 {
   /* font-weight: bold;
   text-decoration: underline;
   text-underline-offset: 5px; */
-  font-size: 24px;
-  padding: 12px 0px 12px 0px;
+  font-size: 1.7rem;
+  padding: 0.5em 0 0.5em 0;
   position: relative;
   cursor: pointer;
 }
@@ -238,7 +236,7 @@ h4 {
 
 .contentBox.active .content {
   height: fit-content;
-  padding-top: 12px;
+  padding-top: 1em;
 }
 
 p {
@@ -258,7 +256,7 @@ p {
 .caption {
   max-width: 100%;
   text-align: left;
-  font-size: 12px;
+  font-size: 0.8rem;
   font-style: italic;
 }
 
@@ -317,8 +315,8 @@ img {
 
 #closePreview {
   position: absolute;
-  top: 18px;
-  right: 18px;
+  top: 1em;
+  right: 1em;
 }
 
 #closePreview img {
@@ -398,7 +396,7 @@ video {
 }
 
 footer {
-  margin: 36px 0 36px;
+  margin: 3em 0 3em;
   text-align: center;
   font-size: 12px;
 }
@@ -410,7 +408,7 @@ footer {
   }
 
   nav .logo {
-    padding-left: 48px;
+    padding-left: 3em;
   }
 
   nav .openMenu {
@@ -418,7 +416,7 @@ footer {
   }
 
   nav .mainMenu {
-    padding: 0px 48px 0px 0px;
+    padding: 0 3em 0 0;
     height: fit-content;
     flex-wrap: wrap;
     display: inline-block;
@@ -426,7 +424,7 @@ footer {
 
   nav .mainMenu li {
     display: inline-block;
-    padding-left: 48px;
+    padding-left: 3em;
   }
 
   nav .mainMenu .closeMenu {
@@ -443,14 +441,14 @@ footer {
   }
 
   main {
-    margin: 0 48px;
+    margin: 0 3em;
   }
 
   .headline {
     position: fixed;
-    top: 60px;
-    padding: 18px 0 36px;
-    width: calc(50% - 48px);
+    top: 4em;
+    padding: 2em 0 3em;
+    width: calc(50% - 4em);
     z-index: 1;
     background: linear-gradient(rgba(255 255 255 / 100%) 70px, rgba(255 255 255 / 0%));
   }
@@ -459,28 +457,28 @@ footer {
     float: left;
     width: 50%;
     margin-bottom: 0px;
-    padding-right: 12px;
+    padding-right: 1em;
   }
 
   .gallery-row .right {
     float: left;
     width: 50%;
     margin-bottom: 0px;
-    padding-left: 12px;
+    padding-left: 1em;
   }
 
   .row {
-    margin: 78px 0 36px 0;
+    margin: 5em 0 3em 0;
   }
 
   .column {
-    top: 160px;
+    top: 12em;
     float: left;
     width: 50%;
   }
 
   .left {
-    padding-right: 12px;
+    padding-right: 1em;
     position: -webkit-sticky;
     /* Safari */
     position: sticky;
@@ -488,19 +486,19 @@ footer {
   }
 
   .right {
-    padding-left: 12px;
+    padding-left: 1em;
   }
 
   .about-column-left {
     float: left;
     width: 60%;
-    padding-right: 12px;
+    padding-right: 1em;
   }
 
   .about-column-right {
     float: left;
     width: 40%;
-    padding-left: 12px;
+    padding-left: 1em;
     position: -webkit-sticky;
     /* Safari */
     position: sticky;
@@ -533,23 +531,23 @@ footer {
 
 @media only screen and (min-width: 1280px) {
   nav .logo {
-    padding-left: 300px;
+    padding-left: 20em;
   }
 
   nav .mainMenu {
-    padding-right: 300px;
+    padding-right: 20em;
   }
 
   .spaceholder {
-    height: 330px;
+    height: 20em;
   }
 
   main {
-    margin: 0 300px;
+    margin: 0 20em;
   }
 
   .headline {
-    width: calc(50% - 300px);
+    width: calc(50% - 20em);
   }
 
   .label:hover {
@@ -566,19 +564,19 @@ footer {
 
 @media only screen and (min-width: 1920px) {
   nav .logo {
-    padding-left: 400px;
+    padding-left: 30em;
   }
 
   nav .mainMenu {
-    padding-right: 400px;
+    padding-right: 30em;
   }
 
   main {
-    margin: 0 400px;
+    margin: 0 30em;
   }
 
   .headline {
-    width: calc(50% - 400px);
+    width: calc(50% - 30em);
   }
 }
 
