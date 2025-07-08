@@ -451,7 +451,8 @@ footer {
     padding: 2em 0 3em;
     width: calc(50% - 4em);
     z-index: 1;
-    background: linear-gradient(rgba(255 255 255 / 100%) 70px, rgba(255 255 255 / 0%));
+    background: linear-gradient(rgba(255 255 255 / 100%) 6em, rgba(255 255 255 / 0%));
+    line-height: 1.5;
   }
 
   .gallery-row .left {
