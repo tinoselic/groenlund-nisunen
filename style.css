@@ -470,11 +470,11 @@ footer {
   }
 
   .row {
-    margin: 5em 0 3em 0;
+    margin: 7em 0 3em 0;
   }
 
   .column {
-    top: 12em;
+    top: 14em;
     float: left;
     width: 50%;
   }
