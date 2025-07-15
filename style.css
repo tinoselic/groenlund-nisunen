@@ -153,7 +153,7 @@ main {
 }
 
 .row {
-  margin-bottom: 3em;
+  margin-bottom: 6em;
 }
 
 .column {
@@ -171,21 +171,25 @@ main {
 
 h1 {
   font-weight: bold;
-  padding-top: 1em;
+  text-transform: uppercase;
+  line-height: 1.5;
 }
 
 h2 {
   font-weight: bold;
+  line-height: 1.5;
 }
 
 h3 {
-  font-weight: normal;
-  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.5;
+  /* text-transform: uppercase; */
 }
 
 h4 {
   font-weight: normal;
   text-transform: uppercase;
+  line-height: 1.5;
 }
 
 .accordion {
@@ -261,7 +265,7 @@ p {
 }
 
 i {
-  color: #777;
+  color: inherit;
 }
 
 img {
