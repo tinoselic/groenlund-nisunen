@@ -61,12 +61,12 @@ nav {
   background: #fff;
   /* box-shadow: 0px 1px; */
   z-index: 2;
+  padding: 0 1em 0 1em;
 }
 
 nav .logo {
-  padding-left: 1em;
-  padding-top: 1.5em;
   width: fit-content;
+  padding-top: 1.5em;
 }
 
 nav .openMenu {
@@ -85,11 +85,11 @@ nav .mainMenu {
 }
 
 nav .mainMenu li {
-  padding-left: 1em;
+  margin-top: 4em;
+  list-style: none;
 }
 
 nav .mainMenu li a {
-  line-height: 5;
   text-underline-offset: 5px;
 }
 
@@ -148,7 +148,7 @@ main {
 }
 
 .headline {
-  padding-bottom: 2em;
+  padding-bottom: 3em;
   line-height: 1.5;
 }
 
@@ -189,7 +189,7 @@ h3 {
 h4 {
   font-weight: normal;
   text-transform: uppercase;
-  line-height: 1.5;
+  line-height: 1;
 }
 
 .accordion {
@@ -409,10 +409,11 @@ footer {
   nav {
     display: flex;
     justify-content: space-between;
+    padding: 1.5em 3em 1.5em 3em;
   }
 
   nav .logo {
-    padding-left: 3em;
+    padding-top: 0;
   }
 
   nav .openMenu {
@@ -420,15 +421,15 @@ footer {
   }
 
   nav .mainMenu {
-    padding: 0 3em 0 0;
+    padding-top: 0;
     height: fit-content;
-    flex-wrap: wrap;
-    display: inline-block;
+    display: block;
   }
 
   nav .mainMenu li {
-    display: inline-block;
+    margin: 0;
     padding-left: 3em;
+    display: inline-block;
   }
 
   nav .mainMenu .closeMenu {
@@ -536,16 +537,7 @@ footer {
 
 @media only screen and (min-width: 1280px) {
   nav {
-    height: 5em;
-  }
-
-  nav .logo {
-    padding-left: 20em;
-    padding-top: 2em;
-  }
-
-  nav .mainMenu {
-    padding-right: 20em;
+    padding: 1.5em 20em 1.5em 20em;
   }
 
   .spaceholder {
@@ -573,12 +565,8 @@ footer {
 }
 
 @media only screen and (min-width: 1920px) {
-  nav .logo {
-    padding-left: 30em;
-  }
-
-  nav .mainMenu {
-    padding-right: 30em;
+  nav {
+    padding: 1.5em 30em 1.5em 30em;
   }
 
   main {
