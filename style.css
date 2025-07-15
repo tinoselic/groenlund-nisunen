@@ -106,18 +106,8 @@ nav img {
   cursor: pointer;
 }
 
-nav img:hover {
-  opacity: 0.5;
-  transition: .5s ease;
-}
-
 nav a:link {
   text-decoration: none;
-  color: #000;
-}
-
-nav .mainMenu a:hover {
-  text-decoration: underline;
   color: #000;
 }
 
@@ -130,11 +120,6 @@ a:link {
   color: #000;
   text-decoration: underline;
   text-underline-offset: 2px;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: #999;
 }
 
 a:visited {
@@ -200,10 +185,6 @@ h4 {
   box-shadow: 0px 1px 0px #c8c8c8;
 }
 
-/* .accordion:hover {
-  background-color: #c8c8c8;
-} */
-
 .contentBox {
   position: relative;
 }
@@ -257,10 +238,6 @@ p {
   max-width: 100%;
 }
 
-.title:hover {
-  color: #777;
-}
-
 .caption {
   max-width: 100%;
   text-align: left;
@@ -278,22 +255,11 @@ img {
   margin-right: auto;
 }
 
-.gallery:hover {
-  cursor: pointer;
-  filter: brightness(0.7);
-  transition: .5s ease;
-}
-
 .thumbnail {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   transition: .5s ease;
-}
-
-.thumbnail:hover {
-  filter: brightness(0.7);
-  cursor: zoom-in;
 }
 
 /* Modal (hidden by default) */
@@ -316,11 +282,6 @@ img {
   max-height: 80%;
 }
 
-#previewImage:hover {
-  cursor: default;
-  filter: none;
-}
-
 #closePreview {
   position: absolute;
   top: 1em;
@@ -331,10 +292,6 @@ img {
   height: 26px;
   cursor: pointer;
   filter: invert();
-}
-
-#closePreview:hover {
-  opacity: 50%;
 }
 
 /* Image Preview Animation */
@@ -544,6 +501,40 @@ footer {
     padding: 1.5em 20em 1.5em 20em;
   }
 
+  nav img:hover {
+    opacity: 0.5;
+    transition: .5s ease;
+  }
+
+  nav .mainMenu a:hover {
+    text-decoration: underline;
+    color: #000;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: #999;
+  }
+
+  /* .accordion:hover {
+  background-color: #c8c8c8;
+} */
+
+  .label:hover {
+    color: #999;
+    transition: .5s ease;
+  }
+
+  .title:hover {
+    color: #777;
+  }
+
+  .gallery:hover {
+    cursor: pointer;
+    filter: brightness(0.7);
+    transition: .5s ease;
+  }
+
   .spaceholder {
     height: 20em;
   }
@@ -556,15 +547,24 @@ footer {
     width: calc(50% - 20em);
   }
 
-  .label:hover {
-    color: #999;
-    transition: .5s ease;
-  }
-
   #previewImage {
     width: auto;
     max-width: 100%;
     height: 80%;
+  }
+
+  #previewImage:hover {
+    cursor: default;
+    filter: none;
+  }
+
+  .thumbnail:hover {
+    filter: brightness(0.7);
+    cursor: zoom-in;
+  }
+
+  #closePreview:hover {
+    opacity: 50%;
   }
 }
 
