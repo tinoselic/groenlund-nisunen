@@ -148,7 +148,7 @@ main {
 }
 
 .headline {
-  padding-bottom: 3em;
+  padding-bottom: 2em;
   line-height: 1.5;
 }
 
@@ -170,23 +170,27 @@ main {
 }
 
 h1 {
+  padding: 0;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.5;
 }
 
 h2 {
+  padding: inherit;
   font-weight: bold;
   line-height: 1.5;
 }
 
 h3 {
+  padding: inherit;
   font-weight: bold;
   line-height: 1.5;
   /* text-transform: uppercase; */
 }
 
 h4 {
+  padding: inherit;
   font-weight: normal;
   text-transform: uppercase;
   line-height: 1;
@@ -452,7 +456,7 @@ footer {
   .headline {
     position: fixed;
     top: 4em;
-    padding: 2em 0 3em;
+    padding: 2em 0 2em;
     width: calc(50% - 4em);
     z-index: 1;
     background: linear-gradient(rgba(255 255 255 / 100%) 6em, rgba(255 255 255 / 0%));
